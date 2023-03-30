@@ -40,6 +40,14 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtImageURL = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +56,7 @@
             this.cmbOtdel.FormattingEnabled = true;
             this.cmbOtdel.Location = new System.Drawing.Point(52, 113);
             this.cmbOtdel.Name = "cmbOtdel";
-            this.cmbOtdel.Size = new System.Drawing.Size(123, 24);
+            this.cmbOtdel.Size = new System.Drawing.Size(173, 24);
             this.cmbOtdel.TabIndex = 0;
             this.cmbOtdel.Tag = "Otdel";
             // 
@@ -57,7 +65,7 @@
             this.cmbClass.FormattingEnabled = true;
             this.cmbClass.Location = new System.Drawing.Point(53, 173);
             this.cmbClass.Name = "cmbClass";
-            this.cmbClass.Size = new System.Drawing.Size(121, 24);
+            this.cmbClass.Size = new System.Drawing.Size(171, 24);
             this.cmbClass.TabIndex = 1;
             this.cmbClass.SelectedIndexChanged += new System.EventHandler(this.cmbClass_SelectedIndexChanged);
             // 
@@ -66,31 +74,31 @@
             this.cmbRazred.FormattingEnabled = true;
             this.cmbRazred.Location = new System.Drawing.Point(54, 245);
             this.cmbRazred.Name = "cmbRazred";
-            this.cmbRazred.Size = new System.Drawing.Size(121, 24);
+            this.cmbRazred.Size = new System.Drawing.Size(171, 24);
             this.cmbRazred.TabIndex = 2;
             // 
             // cmbFam
             // 
             this.cmbFam.FormattingEnabled = true;
-            this.cmbFam.Location = new System.Drawing.Point(274, 113);
+            this.cmbFam.Location = new System.Drawing.Point(54, 308);
             this.cmbFam.Name = "cmbFam";
-            this.cmbFam.Size = new System.Drawing.Size(121, 24);
+            this.cmbFam.Size = new System.Drawing.Size(171, 24);
             this.cmbFam.TabIndex = 3;
             // 
             // cmbRod
             // 
             this.cmbRod.FormattingEnabled = true;
-            this.cmbRod.Location = new System.Drawing.Point(274, 175);
+            this.cmbRod.Location = new System.Drawing.Point(54, 370);
             this.cmbRod.Name = "cmbRod";
-            this.cmbRod.Size = new System.Drawing.Size(121, 24);
+            this.cmbRod.Size = new System.Drawing.Size(171, 24);
             this.cmbRod.TabIndex = 4;
             // 
             // cmbVid
             // 
             this.cmbVid.FormattingEnabled = true;
-            this.cmbVid.Location = new System.Drawing.Point(274, 245);
+            this.cmbVid.Location = new System.Drawing.Point(54, 440);
             this.cmbVid.Name = "cmbVid";
-            this.cmbVid.Size = new System.Drawing.Size(121, 24);
+            this.cmbVid.Size = new System.Drawing.Size(171, 24);
             this.cmbVid.TabIndex = 5;
             // 
             // txtDescription
@@ -98,6 +106,7 @@
             this.txtDescription.Location = new System.Drawing.Point(469, 53);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
+            this.txtDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtDescription.Size = new System.Drawing.Size(276, 350);
             this.txtDescription.TabIndex = 6;
             // 
@@ -105,9 +114,9 @@
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnAdd.Location = new System.Drawing.Point(42, 296);
+            this.btnAdd.Location = new System.Drawing.Point(293, 113);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(375, 43);
+            this.btnAdd.Size = new System.Drawing.Size(144, 43);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "ADD new TREE";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -152,11 +161,90 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(55, 421);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(27, 16);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "Vid";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(55, 351);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(33, 16);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Rod";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(55, 289);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 16);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Family";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(51, 217);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 16);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Razred";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(50, 154);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 16);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "CALSS";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(49, 94);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 16);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "OTDEL";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(466, 440);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(106, 16);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "Add Image URL:";
+            // 
+            // txtImageURL
+            // 
+            this.txtImageURL.Location = new System.Drawing.Point(466, 462);
+            this.txtImageURL.Name = "txtImageURL";
+            this.txtImageURL.Size = new System.Drawing.Size(279, 22);
+            this.txtImageURL.TabIndex = 34;
+            this.txtImageURL.TextChanged += new System.EventHandler(this.txtImageURL_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1139, 450);
+            this.ClientSize = new System.Drawing.Size(1100, 511);
+            this.Controls.Add(this.txtImageURL);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtName);
@@ -192,6 +280,14 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtImageURL;
     }
 }
 
